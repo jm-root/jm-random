@@ -34,8 +34,8 @@ class Random {
             max = min;
             min = 0;
         }
-        let range = min + (this.random() * (max - min));
-        return Math.round(range);
+        let range = min + (this.random() * (max - min + 1));
+        return Math.floor(range);
     }
 
     /**

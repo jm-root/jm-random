@@ -1,19 +1,16 @@
 'use strict';
 
-var gulp = require('gulp'),
-    gutil = require('gulp-util'),
-    clean = require('gulp-clean'),
-    gulpSequence = require('gulp-sequence'),
-    jshint = require('gulp-jshint'),
-    concat = require('gulp-concat'),
-    rename = require('gulp-rename'),
-    uglify = require('gulp-uglify'),
-    babel = require('gulp-babel'),
-    browserify = require('gulp-browserify'),
-    eslint = require('gulp-eslint'),
-    jsdoc = require('gulp-jsdoc3'),
-    version = 'v' + require('./package.json').version
-    ;
+var gulp = require('gulp')
+var clean = require('gulp-clean')
+var gulpSequence = require('gulp-sequence')
+var jshint = require('gulp-jshint')
+var concat = require('gulp-concat')
+var rename = require('gulp-rename')
+var uglify = require('gulp-uglify')
+var babel = require('gulp-babel')
+var browserify = require('gulp-browserify')
+var eslint = require('gulp-eslint')
+var jsdoc = require('gulp-jsdoc3')
 
 gulp.task('clean', function () {
     return gulp.src(['dist/*', 'lib/*'])
