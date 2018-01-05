@@ -1,11 +1,11 @@
-import chai from 'chai';
+import chai from 'chai'
 
-let expect = chai.expect;
-import rnd from '../src';
+let expect = chai.expect
+import rnd from '../src'
 
-let Random = rnd.Random;
+let Random = rnd.Random
 
-let r = new Random();
+let r = new Random()
 
 describe('random', function () {
   it('Random', function () {
@@ -13,7 +13,7 @@ describe('random', function () {
     expect(r.randomInt(2)).to.within(0, 2)
     expect(r.randomInt(1, 2)).to.within(1, 2)
     expect(r.randomDouble(1, 2)).to.within(1, 2)
-  });
+  })
 
   it('randomInt qaulity', function () {
     let len = 5
@@ -25,5 +25,4 @@ describe('random', function () {
     }
     console.log(m)
   })
-
-});
+})
